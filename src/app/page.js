@@ -2,6 +2,7 @@ import Link from "next/link";
 import Category from "@/Components/Category";
 import FeaturedProducts from "@/Components/FeaturedProducts";
 import PromoBanner from "@/Components/PromoBanner";
+import ProductList from "@/Components/ProductList";
 
 export default function Home() {
   return (
