@@ -7,9 +7,11 @@ import { getProductById } from "@/services/productService";
 import ProductCard from "@/Components/ProductCard";
 import SimilarProducts from "@/Components/SimilarProducts";
 import { useContext } from "react";
-import cartContext from "@/context/CartContext";
+import cartContext from "@/Context/CartContext";
+
 export default function ProductDetails() {
   const { id } = useParams();
+  
 
   const [product, setProduct] = useState(null);
   const { addToCart } = useContext(cartContext)
