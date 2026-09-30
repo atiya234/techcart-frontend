@@ -1,7 +1,7 @@
 import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
-import { CartProvider } from "@/context/CartContext";
+import { CartProvider } from "@/Context/CartContext";
 
 export const metadata = {
   title: "TechCart | Online Store",
