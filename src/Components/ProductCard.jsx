@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useContext } from "react";
-import cartContext from "@/context/CartContext";
+import cartContext from "@/Context/CartContext";
 
 export default function ProductCard({ product }) {
 const { addToCart } = useContext(cartContext)
