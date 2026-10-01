@@ -6,8 +6,13 @@ import { useParams } from "next/navigation";
 import { getProductById } from "@/services/productService";
 import ProductCard from "@/Components/ProductCard";
 import SimilarProducts from "@/Components/SimilarProducts";
-import { useContext } from "react";
+
 import cartContext from "@/Context/CartContext";
+import WishlistContext from "@/Context/WishlistContext";
+import { useContext } from "react";
+import { AuthContext } from "@/Context/AuthContext";
+import { useRouter } from "next/navigation";
+
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -15,6 +20,18 @@ export default function ProductDetails() {
 
   const [product, setProduct] = useState(null);
   const { addToCart } = useContext(cartContext)
+  const { addWishlist } = useContext(WishlistContext)
+  const { user } = useContext(AuthContext);
+
+const router  = useRouter();
+
+const handleAddToCart = () => {
+  if (!user){
+    router.push("/login");
+    return;
+  }
+  addToCart(product)
+}
 
   useEffect(() => {
     getProductById(id)
@@ -118,14 +135,19 @@ export default function ProductDetails() {
               {/* Buttons */}
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <button
-                  type="button" onClick={()=>console.log("BUTTON CLICKED")}
+                  type="button" onClick={
+                    handleAddToCart
+                    
+                  }
                   className="flex-1 rounded-lg bg-black px-6 py-3 font-semibold text-white transition hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
                 >
                   Add to Cart
                 </button>
 
                 <button
-                  type="button"
+                  type="button" onClick={()=>
+                  
+                    addWishlist(product)}
                   className="rounded-lg border border-gray-300 px-6 py-3 font-semibold text-gray-800 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
                 >
                   ♡ Wishlist

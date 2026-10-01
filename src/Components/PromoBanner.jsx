@@ -13,8 +13,8 @@ export default function PromoBanner() {
         <p className="mt-2 text-sm text-gray-300">
           Upgrade your setup with our best laptop deals.
         </p>
-        <Link href = ""
-        //   href="/products?category=laptops"
+        <Link 
+          href="/products?category=laptops"
           className="mt-6 inline-block rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
         >
           Shop Laptops
@@ -31,8 +31,8 @@ export default function PromoBanner() {
         <p className="mt-2 text-sm text-gray-600">
           Explore the newest phones at great prices.
         </p>
-        <Link href=""
-        //   href="/products?category=smartphones"
+        <Link 
+         href="/products?category=smartphones"
           className="mt-6 inline-block rounded-md bg-black px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
         >
           Shop Phones

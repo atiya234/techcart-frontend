@@ -2,6 +2,9 @@ import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import { CartProvider } from "@/Context/CartContext";
+import { WishlistProvider } from "@/Context/WishlistContext";
+import AuthProvider from "@/Context/AuthContext";
+
 
 export const metadata = {
   title: "TechCart | Online Store",
@@ -12,13 +15,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col bg-white text-gray-900">
+        <AuthProvider>
         <CartProvider>
-          <Navbar />
-          <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-6 sm:px-6 lg:px-8">
-            {children}
-          </main>
-          <Footer />
+          <WishlistProvider>
+            <Navbar />
+            <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-6 sm:px-6 lg:px-8">
+              {children}
+            </main>
+            <Footer />
+          </WishlistProvider>
         </CartProvider>
+        </AuthProvider>
       </body>
     </html>
   );
