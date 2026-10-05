@@ -1,124 +1,121 @@
-
 "use client";
 
-import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { useContext, useEffect, useState } from "react";
+import { useParams, useRouter } from "next/navigation";
 import { getProductById } from "@/services/productService";
-import ProductCard from "@/Components/ProductCard";
 import SimilarProducts from "@/Components/SimilarProducts";
-
+import ProductGallery from "@/Components/ProductGallery";
+import ModelSelector from "@/Components/ModelSelector";
 import cartContext from "@/Context/CartContext";
 import WishlistContext from "@/Context/WishlistContext";
-import { useContext } from "react";
 import { AuthContext } from "@/Context/AuthContext";
-import { useRouter } from "next/navigation";
-
+import AddReview from "@/Components/AddReview";
+import ReviewList from "@/Components/ReviewList";
 
 export default function ProductDetails() {
   const { id } = useParams();
-  
+  const router = useRouter();
 
   const [product, setProduct] = useState(null);
-  const { addToCart } = useContext(cartContext)
-  const { addWishlist } = useContext(WishlistContext)
-  const { user } = useContext(AuthContext);
+  const [previewSrc, setPreviewSrc] = useState(null);
 
-const router  = useRouter();
-
-const handleAddToCart = () => {
-  if (!user){
-    router.push("/login");
-    return;
-  }
-  addToCart(product)
-}
+  const { addToCart } = useContext(cartContext);
+  const { addWishlist } = useContext(WishlistContext);
+  const { user, loaded } = useContext(AuthContext);
 
   useEffect(() => {
     getProductById(id)
       .then((data) => {
-        console.log("API DATA:", data);
         setProduct(data);
+        setPreviewSrc(null);
       })
       .catch((error) => {
-        console.log("ERROR:", error);
-      });
-  }, [id]);
+        console.log(error)
+      })
+  }, [id])
+  const handleAddToCart = () => {
+    if (!loaded) return;
+
+    if (!user) {
+      router.push("/login");
+      return;
+    }
+
+    addToCart(product);
+  };
+  const handleSelectModel = (model) => {
+    if (String(model.id) === String(product.id)) return;
+
+    router.replace(`/products/${model.id}`, { scroll: false });
+  };
 
   if (!product) {
     return (
-      <main className="flex min-h-[70vh] items-center justify-center px-4">
+      <div className="flex min-h-[70vh] items-center justify-center px-4">
         <p className="text-gray-500">Loading product...</p>
-      </main>
+      </div>
     );
   }
 
+  // A product with no stock number (added from admin) counts as available
+  const hasStockInfo = typeof product.stock === "number";
+  const inStock = !hasStockInfo || product.stock > 0;
+
   return (
-    <main className="min-h-screen bg-gray-50 px-4 py-8 sm:px-6 lg:px-8">
+    <div className="bg-gray-50 px-4 py-8 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
-        {/* Product Card */}
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200">
           <div className="grid md:grid-cols-2">
-
             {/* Product Image */}
-            <div className="flex min-h-[350px] items-center justify-center bg-gray-100 p-6 sm:min-h-[450px]">
-              {product.image ? (
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  className="max-h-[400px] w-full object-contain"
-                />
-              ) : (
-                <div className="flex h-full min-h-[300px] items-center justify-center text-gray-400">
-                  No Image Available
-                </div>
-              )}
-            </div>
+            <ProductGallery key={product.id} product={product} previewSrc={previewSrc} />
 
             {/* Product Information */}
             <div className="flex flex-col p-6 sm:p-8 lg:p-10">
-
-              {/* Category */}
               <p className="text-sm font-medium uppercase tracking-wider text-gray-500">
                 {product.category}
               </p>
 
-              {/* Title */}
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 {product.title}
               </h1>
 
-              {/* Rating */}
+              {/* Other models: hover to preview, click to open */}
+              <ModelSelector
+                product={product}
+                onSelect={handleSelectModel}
+                onPreview={setPreviewSrc}
+              />
+
               <div className="mt-4 flex items-center gap-2">
                 <span className="rounded-md bg-yellow-100 px-2 py-1 text-sm font-semibold text-yellow-700">
                   ⭐ {product.rating}
                 </span>
-                <span className="text-sm text-gray-500">
-                  Customer Rating
-                </span>
+                <span className="text-sm text-gray-500">Customer Rating</span>
               </div>
 
-              {/* Price */}
               <div className="mt-6">
                 <span className="text-3xl font-bold text-gray-900">
                   ${product.price}
                 </span>
               </div>
 
-              {/* Description */}
               <p className="mt-6 leading-7 text-gray-600">
                 {product.description ||
                   "Experience high-quality technology designed for everyday use."}
               </p>
 
-              {/* Stock */}
               <div className="mt-6 border-y border-gray-200 py-4">
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-gray-500">Availability</span>
-
-                  <span className="font-medium text-green-600">
-                    {product.stock > 0
-                      ? `${product.stock} items in stock`
-                      : "Out of stock"}
+                  <span
+                    className={`font-medium ${inStock ? "text-green-600" : "text-red-600"
+                      }`}
+                  >
+                    {!inStock
+                      ? "Out of stock"
+                      : hasStockInfo
+                        ? `${product.stock} items in stock`
+                        : "In stock"}
                   </span>
                 </div>
 
@@ -135,34 +132,36 @@ const handleAddToCart = () => {
               {/* Buttons */}
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <button
-                  type="button" onClick={
-                    handleAddToCart
-                    
-                  }
-                  className="flex-1 rounded-lg bg-black px-6 py-3 font-semibold text-white transition hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+                  type="button"
+                  onClick={handleAddToCart}
+                  disabled={!inStock}
+                  className="flex-1 rounded-lg bg-black px-6 py-3 font-semibold text-white transition hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   Add to Cart
                 </button>
 
                 <button
-                  type="button" onClick={()=>
-                  
-                    addWishlist(product)}
+                  type="button"
+                  onClick={() => addWishlist(product)}
                   className="rounded-lg border border-gray-300 px-6 py-3 font-semibold text-gray-800 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
                 >
                   ♡ Wishlist
                 </button>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-      <SimilarProducts  currentProductId = {product.id}
-      category = {product.category}
-      
+
+      <SimilarProducts
+        currentProductId={product.id}
+        category={product.category}
       />
-     
-    </main>
+
+      <div className="mx-auto mt-10 w-full max-w-6xl">
+        <AddReview productId={product.id} />
+        <ReviewList productId={product.id} />
+      </div>
+    </div>
   );
 }

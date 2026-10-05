@@ -1,11 +1,126 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
+  --background: #f8f8f8;
   --foreground: #171717;
 }
 
 body {
-  background: var(--background);
+  background-color: #f8f8f8;
   color: var(--foreground);
+
+  /* Glossy white oil-paint effect */
+  background-image:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(220, 220, 220, 0.45) 35%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(210, 210, 210, 0.35) 35%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 80% 85%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(200, 200, 200, 0.4) 35%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 15% 85%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(225, 225, 225, 0.4) 35%,
+      transparent 60%
+    );
+
+  background-size: 170% 170%;
+  background-attachment: fixed;
+
+  animation: page-flow 26s ease-in-out infinite alternate;
+}
+
+/* Dark theme */
+.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+
+  background-image: none;
+}
+
+/* Glossy white shine */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background: linear-gradient(
+    115deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.15)
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Images should never overflow their container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent long words/text from breaking layouts */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Mobile: 375px */
+@media (min-width: 375px) {
+  body {
+    width: 100%;
+  }
+}
+
+/* Tablet: 768px */
+@media (min-width: 768px) {
+  body {
+    width: 100%;
+  }
+}
+
+/* Laptop: 1024px */
+@media (min-width: 1024px) {
+  body {
+    width: 100%;
+  }
+}
+
+/* Desktop: 1440px */
+@media (min-width: 1440px) {
+  body {
+    width: 100%;
+  }
 }

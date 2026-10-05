@@ -64,24 +64,35 @@ const Page = () => {
   };
 
   return (
-    <div className="flex min-h-[70vh] items-center justify-center bg-gray-100 px-4 py-10">
-      <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-sm">
-        <h1 className="text-3xl font-bold text-black">Welcome Back</h1>
+    <div className="flex min-h-[70vh] items-center justify-center bg-gray-100 px-4 py-8 sm:px-6 sm:py-10">
 
-        <p className="mt-2 text-sm text-gray-500">
+      <div className="w-full max-w-md rounded-2xl bg-white p-5 shadow-sm sm:p-8">
+
+        <h1 className="text-2xl font-bold text-black sm:text-3xl">
+          Welcome Back
+        </h1>
+
+        <p className="mt-2 text-sm leading-5 text-gray-500 sm:text-base">
           Login to your TechCart account
         </p>
 
-        <form onSubmit={submitHandler} className="mt-8 space-y-5">
+        <form className="mt-6 space-y-4 sm:mt-8 sm:space-y-5" onSubmit={submitHandler}>
+
           {error.form && (
-            <p role="alert" className="rounded-lg bg-red-50 p-3 text-sm text-red-600">
+            <p
+              role="alert"
+              className="rounded-lg bg-red-50 p-3 text-sm leading-5 text-red-600"
+            >
               {error.form}
             </p>
           )}
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="mb-2 block text-sm font-medium">
+            <label
+              htmlFor="email"
+              className="mb-2 block text-sm font-medium"
+            >
               Email
             </label>
 
@@ -92,17 +103,22 @@ const Page = () => {
               value={login.email}
               onChange={changeData}
               placeholder="Enter your email"
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-black"
+              className="w-full rounded-lg border border-gray-300 px-3 py-2.5 text-sm outline-none focus:border-black sm:px-4 sm:py-3 sm:text-base"
             />
 
             {error.email && (
-              <p className="mt-1 text-sm text-red-600">{error.email}</p>
+              <p className="mt-1 text-xs leading-5 text-red-600 sm:text-sm">
+                {error.email}
+              </p>
             )}
           </div>
 
           {/* Password */}
           <div>
-            <label htmlFor="password" className="mb-2 block text-sm font-medium">
+            <label
+              htmlFor="password"
+              className="mb-2 block text-sm font-medium"
+            >
               Password
             </label>
 
@@ -113,30 +129,38 @@ const Page = () => {
               value={login.password}
               onChange={changeData}
               placeholder="Enter your password"
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-black"
+              className="w-full rounded-lg border border-gray-300 px-3 py-2.5 text-sm outline-none focus:border-black sm:px-4 sm:py-3 sm:text-base"
             />
 
             {error.password && (
-              <p className="mt-1 text-sm text-red-600">{error.password}</p>
+              <p className="mt-1 text-xs leading-5 text-red-600 sm:text-sm">
+                {error.password}
+              </p>
             )}
           </div>
 
           {/* Submit */}
           <button
             type="submit"
-            className="w-full rounded-lg bg-black px-4 py-3 font-semibold text-white transition hover:bg-gray-800"
+            className="w-full rounded-lg bg-black px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-gray-800 sm:py-3 sm:text-base"
           >
             Login
           </button>
+
         </form>
 
-        <p className="mt-4 text-center text-sm text-gray-600">
+        <p className="mt-4 text-center text-xs leading-5 text-gray-600 sm:text-sm">
           New here?{" "}
-          <Link href="/register" className="font-medium text-black underline">
+          <Link
+            href="/register"
+            className="font-medium text-black underline"
+          >
             Create an account
           </Link>
         </p>
+
       </div>
+
     </div>
   );
 };

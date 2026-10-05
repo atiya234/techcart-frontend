@@ -61,6 +61,10 @@ const removeFromCart = (id) => {
     setCart((prev)=> prev.filter((item)=> item.id !== id));
 }
 
+
+const clearCart = () => {
+    setCart([]);
+}
 const updateQuantity = (id , quantity) => {
     if(quantity < 1) return;
     setCart((prev)=> 
@@ -71,7 +75,7 @@ const itemCount = cart.reduce((sum , item)=> sum + item.quantity, 0);
 const subtotal = cart.reduce((sum , item)=>sum + item.price * item.quantity,  0)
 
 return (
-    <cartContext.Provider value = {{cart , setCart , addToCart, loaded, itemCount, subtotal, removeFromCart, updateQuantity }}>
+    <cartContext.Provider value = {{cart , setCart , addToCart, loaded, itemCount, subtotal, removeFromCart, updateQuantity, clearCart}} >
         {children}
     </cartContext.Provider>
 )

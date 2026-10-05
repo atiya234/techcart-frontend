@@ -1,60 +1,325 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "iPhone 15",
       "category": "smartphones",
       "price": 799,
-      "rating": 4.7
+      "rating": 4.5,
+      "image": "https://rukminim3.flixcart.com/image/480/640/xif0q/mobile/h/d/9/-resized-original-imagtc2qzgnnuhxh.jpeg?q=90",
+      "images": [
+        "https://rukminim3.flixcart.com/image/480/640/xif0q/mobile/h/d/9/-resized-original-imagtc2qzgnnuhxh.jpeg?q=90",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQrnYdOMjTC4P7VoIrg8JQS-J-MV9CNEqwVqUNOE0Ka9LI4aADIKtdW1lovdL4NUhhcUKMfCmvzoEHB58jtIApT2I03QkX2MxMPCAnKQxF8LdDcwCojQOIx",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQVJXO_Rkt7-EdYCANHAtTzg_sE4D8JmDCowl0marc4zJM7nX9bNyNrkC-tZN603I6CyPMgEVLYcR_2K4_8Ol-Kc0ocxnhCfKWbQljdnMERusSbqPAGeo8HXg",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTCwMOytSmJJJI9zPceUO9Iy96pdRhYZk8_Lwu_OgNLDsRW0SGXOXpfRTNEOZFNKVtRD3ld5C7JuUIsnBVU9W3uRfBl8tpJCw",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSHoaY7aYGBUSKZY5IyC8Hmi7OIQ8QcPskQvlqSs0b9adQeqqKL0805gHNGGcLd0Pd8MWMSrOdPWDyyqSsSYdr0C_XcxXo-Hg",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQouVahmL_qi72BtEavRLCirXR4jujQpHyvLrnrzr_9b76pIjhwOqMdD0oGhb-zTSpviG2BqXYEPPV841RCfEUP4Es4OY6_OL2GFxY-vQA-J8AjSussoJOMTnHJ"
+      ],
+      "video": "https://www.youtube.com/shorts/JgfCm8fsfv4?feature=share"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Samsung Galaxy S24",
       "category": "smartphones",
       "price": 699,
-      "rating": 4.6
+      "rating": 4.6,
+      "image": "https://th.bing.com/th/id/OPAC.tnDhJN79xYJY2Q474C474?w=300&h=300&o=5&dpr=1.3&pid=21.1",
+      "images": [
+        "https://th.bing.com/th/id/OPAC.tnDhJN79xYJY2Q474C474?w=300&h=300&o=5&dpr=1.3&pid=21.1",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTbwQ-lvEF9fzqRFZ02EFUJ-eYPzOsmwtgPJbvfvyfOKK9O40ZISXmJ8My0lLZCCGMrrmQYQ-VUL6h_bFDEf9cwlJOJyq-RO2E-lUOyw_H_jHbRx3tGeTb0",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSprFEZj2e-FAxYdGglTToiQ4UKO20Gv_ksZpSmFMlVXpL_NHc5k4hN5vUTYHw1SiJkmJaer89hxxZZ50_nbt1KJCzrFdv88hncV67A0jGzRmuJ82VmS6c8pQ",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThNS_k0l92YdLDuKUQNR2Fb4kdSTcxSsyvs9apo3hQBb1nvA1Yo3IAmG68TpulJmPikp0eDUTQYx6FRAN8KU2EhneScDvdJYzJz-MNa_wXK4ifdIbPMZlRxw",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT7FsYA3F2F4vtQN1pe7tkwOv1TB657A7KaX3J9Z7XzfNP9jQbv5cB7f2x1BBpeABjP-_ZViLuX6FCV8xElqRoJwCUA46qCUD4rS1INB4_pVs2cxorGqqXEAhM",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT7FsYA3F2F4vtQN1pe7tkwOv1TB657A7KaX3J9Z7XzfNP9jQbv5cB7f2x1BBpeABjP-_ZViLuX6FCV8xElqRoJwCUA46qCUD4rS1INB4_pVs2cxorGqqXEAhM",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRdFeWGaI0zhB8oJ3qoyVomU9vz4ekBSfD_j4esYrLON5Cig36ur8iykcOmfecllXs25HjJIGQumLuM3jjKTxOvCaVqmUl_pU_Z5a5E3NIl",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTk7hOIqwP0qlPNpJBNYo028e_UcSlBMPrrmLZm1rlekTdqeYFg0t4H99HihBmRr6t_6NXej40nHD7IJm6l-D1cxBc9ZgcpXpO9wFjCQvA",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv0sNKSxW78ffGeA3nUTeBl8J1Gg5ERY1TAoYThrLhM20LXk0VmE-oFEinMFCmSFNU9dl-QiH8zWch_wqUjcf6d8T_tdqVmyMpDrzUIiIb",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ6lf72BvDuJznFKWIPa2peei0HIsosBZCep5jhYRD1ywiFQrELTRe3BTpJ7H7lD20bBLnKmI38bBW016gLJydWz7NDPXS6V0Q73TxulXki"
+      ],
+      "video": ""
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "MacBook Air M2",
       "category": "laptops",
       "price": 999,
-      "rating": 4.8
+      "rating": 4.8,
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/220715122428-macbook-air-m2-review-9.jpg?c=original",
+      "images": [
+        "https://media.cnn.com/api/v1/images/stellar/prod/220715122428-macbook-air-m2-review-9.jpg?c=original",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQxejcrbaxrr7A8AMHs0ICLyHSIiOOmlKVuOzFdgbSQl34SzMcDRaV6CiTADrNmyHBd56muQZ38gWVGHqWnvCdrChoqem22xw",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQtfMxmehDb4lO3S9krl16iZtVSgeZ7hRTcpD59G5rteQPey8tV0jWSwVnO3LFeCOxHWdgJveL95wJNV47jzRXHnH7z4E3aEG5Q8jya-1-zQ-e8JpOLowkAb44",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSuLIII2XHrXfJqNZ79OamzGFoBJOYBSLnhiGWpBYjLOWq4l4xPqFghSmdOlmeFFDJJ1c_hSIUtTh-LokuV34D0qrli5LNAOdVVKiF4Yl8t4fojFePDWjucbA",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSYqPe-5uVLiV8jHuHCc7OEBGYDMjMtUcRVUhOxken9uFyG1RiUS6l1Qqa7n4Pa2ZWshzRqR94wTfcofFd20GwYwwSAkSCrSzELTovWNRJ7wvXlY888l3_L6Q",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQiJZLCH7-aDr2QQdEwPmVDOo47J0UGfCp4SIsFMI0B02_JOmURcixN8fPJR3APg7q5xrs_7sSi36wze8v1N_ip4yep6qh8bf9gczS5JCl7ayJE8Ron8UqM",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRkdlNnjD9D8YS-7N5pG4J4YgbqimZGnyML6Lu8mEJwW1AqksFNVJ_HVFScIXcPHihMPf2iE6_1FEriOxwpS41EC4MqpuRv",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRIbtRCpD9_hnuYtjDVcm5KFZmiFeAXPnN4wQXjgyV_xBRvqc-51zYCWRPT4veCpnC-pxjVfj6r_RKaH9ArR8uLXHzza3HoQNtd_IDiHnQ"
+      ],
+      "video": ""
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "iPad Pro",
       "category": "tablets",
       "price": 899,
-      "rating": 4.5
+      "rating": 4.5,
+      "image": "https://th.bing.com/th?id=OPAC.8g6QQe62a%2fYBhw474C474&w=300&h=300&o=5&dpr=1.3&pid=21.1",
+      "images": [
+        "https://th.bing.com/th?id=OPAC.8g6QQe62a%2fYBhw474C474&w=300&h=300&o=5&dpr=1.3&pid=21.1",
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-glass-select-gallery-2-202405?wid=5120&hei=2880&fmt=webp&qlt=90&.v=QU8rTGFZUkxWbm1Fc0VaUXQ2QVNpR0pvMjZnN3E5aGRZVXJIWmhFMitJSU9WV3R2ZHdZMXRzTjZIcWdMTlg4eUJQYkhSV3V1dC9oa0s5K3lqMGtUaGVKZVh6REdCb3NhUkU0K1Z6WFRtbCtXQm92T1BGMVFqb0UvQ214cjlZaHg&traceId=1",
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-connectivity-select-202405_GEO_IN?wid=5120&hei=2880&fmt=webp&qlt=90&.v=c0F3UGQ5b2YvWmtydGM3WXc4QzFKUlJpUHQ0Y3cxeE9PdlBuaEtTZ1Jqb295ZzZWUGZtaU5hSi9ZSXlhZWRGZmd2S3NaRzcrU0dmYjNHTUFiMnlsWFUxSlgrVWMrMzU1OXo2c2JyNjJZTGcvZTZFWjBQNkMwOVQwTk5vQ3FBMVA&traceId=1",
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-engraving-select-202405-11inch-silver-glossy-wifi?wid=5120&hei=2880&fmt=webp&qlt=90&.v=Y05mc0ZxMkxseHllNWRRb25zYm1iNGRWeWJnOVFQTEdKSGY0N2RuT1A5dGtqMVhnWWJSTFh4V2xkbUxCbEUrSXhkNjFtOVlOTTVzb2l3b01aa3dseTRMeXJHUnUva2huMjl4akFHOXNwVjFOU1YvbEhQdCtlZmMrckc2K3RtQzRIUTM2NmJ1amR1V2Z5cTNxb2pTK2F3&traceId=1"
+      ],
+      "video": ""
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Dell XPS 13",
       "category": "laptops",
       "price": 1099,
-      "rating": 4.4
+      "rating": 4.4,
+      "image": "https://th.bing.com/th/id/OPAC.h3hpdPG0izIIrw474C474?w=300&h=300&o=5&dpr=1.3&pid=21.1",
+      "images": [
+        "https://th.bing.com/th/id/OPAC.h3hpdPG0izIIrw474C474?w=300&h=300&o=5&dpr=1.3&pid=21.1",
+        "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc16250/laptop-dell-pro-16-pc16250-feature-video.psd?fmt=png-alpha&wid=5000&hei=2813",
+        "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc16250/laptop-dell-pro-16-pc16250-sleek-design.psd?fmt=png-alpha&wid=5000&hei=2813",
+        "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc16250/laptop-dell-pro-16-pc16250-on-the-go.psd?fmt=jpg&wid=3000&hei=1688",
+        "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc16250/laptop-dell-pro-16-pc16250-materials-design.psd?fmt=png-alpha&wid=5000&hei=4000",
+        "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro-premium/pa13250/laptop-dell-pro-premium-13-pa13250-ai-computer.psd?fmt=jpg&wid=1200&hei=675",
+        "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc14250/pdp/laptop-dell-pro-14-pc14250-replaceable-ports.psd?fmt=jpg&wid=5000&hei=2813"
+      ],
+      "video": ""
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "OnePlus 12",
       "category": "smartphones",
       "price": 649,
-      "rating": 4.3
+      "rating": 4.3,
+      "image": "https://th.bing.com/th?id=OPAC.b%2bBp4kwWLlIbzw474C474&w=474&h=474&qlt=100&o=5&dpr=1.3&pid=21.1",
+      "images": [
+        "https://th.bing.com/th?id=OPAC.b%2bBp4kwWLlIbzw474C474&w=474&h=474&qlt=100&o=5&dpr=1.3&pid=21.1",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQgl-Oa4TnDuV99kkhQBQWMFo7REcEbnFGF4V98ByGDXS_j4yx1oqDfNR5gK8s5UQneVb8o47Tmg7SpZWS8Xsglr30VgtsQ563nThcxcyyt",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQbMJphbjErgdZfO2iCMZHtakPX67iiIHbzQBmIZliCuTBubwEispD9fCzSiKMX_EKOIlxkUgn8UPT61mzn9m3IjmBW8yNQJYO_aIbMAtUu_HwAymuFH7JRgrs",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQs5o-DoLfnRxSt_WgvbrohJ36kh-2Rh_0vwU_kLBUmzgALlz7JNEeSjUNl709CNedQkq1ldPGSUlraNgi2qB8h4WeN4afBchHlM7yD-AxvYLjX-yPfjWLp7cI",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTVlNCDWwEhXe2Arxy_IGlb0lP47YVPCnZeWeVjbDLCaudNEnUF38-ByYjzlWKATbiFEZKF0YKh3x4CDCTJ9FAn4W43w0DhUFCOy9gcf8E",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTvtqG8udwwFXHkrx7D6HnDzqrjgqsYynBzC6Q8OOEOeJ500gTW6GyO5W0GrjzAHN_XPR4Ge2bKgBLcH1LcNEyJOi-qofZijHcy6l5fpWc",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTM8969AXFHFcOZXYDwgHZIK30sxM19xi8A7cNyw8nbbdHikBzv99hx8rpT4v76Pn4ajMiwRfN5H3aeIWmS_YMsdfiGtM6E",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSaVBoxv7JbW0PhD59JYhz2FemSoY7ahIEy5KDyP4qP5d-wvd628nH55SG1pdWO3pJO8brQO4CXbv6g_FYMCnZvVWy1ppXbHg",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRaPphPz5xC45xQWthyqhpNwxBTSXAKvgv5F7Xa4ZnRR-kmFKQbPjWOE2pFCNwGFAm3p9Jc39rX-UHh60jovutrZ6tv3N6RY_WNPx8NKhg",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ_7Iov0knIierAU9Vgu0w5seHmPWMMMeRGLdEl4gz5zgBbGootrjS9NegrijXrbHAsCjUWKikh3oyC3mH63UjUlOn5pwSpQD8E1ibBH-kN"
+      ],
+      "video": ""
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Galaxy Tab S9",
       "category": "tablets",
       "price": 749,
-      "rating": 4.2
+      "rating": 4.2,
+      "image": "https://th.bing.com/th/id/OPAC.fOrMIvNBpizKKQ474C474?w=300&h=300&o=5&dpr=1.3&pid=21.1",
+      "images": [
+        "https://th.bing.com/th/id/OPAC.fOrMIvNBpizKKQ474C474?w=300&h=300&o=5&dpr=1.3&pid=21.1",
+        "https://rukminim2.flixcart.com/image/1536/1536/xif0q/tablet/2/7/0/-original-imahfqbmw8gf2geg.jpeg?q=90",
+        "https://rukminim2.flixcart.com/image/1536/1536/xif0q/tablet/2/7/0/-original-imahfqbmw8gf2geg.jpeg?q=90",
+        "https://rukminim2.flixcart.com/image/1536/1536/xif0q/tablet/q/z/l/-original-imahfqbmvruzt96n.jpeg?q=90",
+        "https://rukminim2.flixcart.com/image/1536/1536/xif0q/tablet/q/z/l/-original-imahfqbmvruzt96n.jpeg?q=90",
+        "https://rukminim2.flixcart.com/image/1536/1536/xif0q/tablet/2/7/0/-original-imahfqbmw8gf2geg.jpeg?q=90"
+      ],
+      "video": ""
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Wireless Charger",
       "category": "mobile-accessories",
       "price": 29,
-      "rating": 4.1
+      "rating": 4.1,
+      "image": "https://th.bing.com/th?id=OPAC.S9fjSU3Q%2fE%2fY7w474C474&w=300&h=300&o=5&dpr=1.3&pid=21.1",
+      "images": [
+        "https://th.bing.com/th?id=OPAC.S9fjSU3Q%2fE%2fY7w474C474&w=300&h=300&o=5&dpr=1.3&pid=21.1",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTjvxdj6fWoRaNZpH38lWZzstXtweh0QrpgqiL_ZTSf46hfT_01DSyZw67PA4x11KqUG3AxULSmgFC8E0jirfdmagrlMPeWbjH793G2azQpsgT7nFp23FDWrg",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTI1Qya9BVkqC4zBDGpfAv1DdA9QQIs7YHAVg2jR8q9j_sTrVL4lV-fv0FmP6aAFoaFGEOXvEgcHzwqlRXIGPHOVADkY8nqrJvQIzuZT69B4Ny_Cl50XJDM6w",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQSJtYhssztIJrdal9pVnGN4hwyYzrjSvOnaN8xb2j5WXhKSP-d_6FeYxtneUH4ewZE9fnT-JsFcdagK6zNcfOTS2XNYjV0--91wZ5dS4ipxbWren_TolQRPQ",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRHjZthTKawu4DrI7XIP5cUK2s8FUKIPxcVt028V1H0CQtpFxOZWF-LFyeSMupKsHDIjVcqypgRzUfV2yvHvdTmGplGOSflJ956Qdd7VhW9gpa70NZWoaEjSQ"
+      ],
+      "video": ""
+    },
+    {
+      "title": "iPhone 12",
+      "category": "smartphones",
+      "image": "",
+      "images": [
+        "https://s3ng.cashify.in/cashify/store/product//928eaf33238f4df3a238833e626a9556-box.jpg?w=576&dpr=1.3"
+      ],
+      "video": "",
+      "price": 15,
+      "rating": 0,
+      "id": "kESbpceCskA"
+    },
+    {
+      "title": "iphone 16",
+      "category": "smartphones",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSvJR-PRsmAiA-XZVc-IUTw6DLzz-aDtU1bYKwfKJrp1n-xbd2LZzcfA4Ne1PwAC6lWrI8vMg2xPGW2iXrjHO7QVNwG0GnNYDkaZseB2GIGYPdsg70UcsfHtlsW",
+      "images": [
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSvJR-PRsmAiA-XZVc-IUTw6DLzz-aDtU1bYKwfKJrp1n-xbd2LZzcfA4Ne1PwAC6lWrI8vMg2xPGW2iXrjHO7QVNwG0GnNYDkaZseB2GIGYPdsg70UcsfHtlsW",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT4WMiNcshDbD-JPu0qDpIsxkjj_WUqhd3o6bbt1ATnypiLH4aXmQLxM4vooSJUrBPf-hHUTkbCnCMRH673NZQqAMgaAIpJbn-tlf-SukWDTXx3YH554vdzm9k",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTSsOKNQt2EucOWAFqPVxALJqGZQiXsIoK30qVY8Dzdl4rmCinc_dUQeTACUy9x6wpKXEPsl4eZPSHHhnZ9QcpCudl_aZ6c5ZhvBMTP7cIaJ4QFS804xvB3Ag",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQVM1xgHBaj4UKMBzLVEFcxt9PIr730ibL3Wf2jPn2-VOVppGQHF-18MhxFJx3rCaoESZBYUco8LRmYy_xod6B7hhGG6ATD7sh-sMioj6E7tWUWw_Mg1z1yOQ",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRZ7x4qt_-fTj39tfVsjwZHdoP3hLxunNJDulXMzglbbR50Al5xlQz48POGMiKx5we_pvblkBbtxyi5mHacW2lYk2lIyGGzk4ETjsErQz4Y5Wd5bKuI1wqtPA",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQJm8DZnAw6b_BWpvNytTlu2lizBzzlLLK_PSfpHUKufojez2mmXfCKycEO8fasjfd0gsWs7UWRMSPDoZKS87LFs6UbAzT_VdMsbsFHphDWzubVHC_0fczaeA",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQEJMh8HGb_lVctweyRJ-Evd_ALZDjY5BExwZGsYtSWCyRam5f3gEP_w2ZC83aVSgCP_YSOXiCiytYOwyAMKtK34qmgTFao"
+      ],
+      "video": "",
+      "price": 124108,
+      "rating": 4.3,
+      "id": "rfShqtiGyLE"
+    },
+    {
+      "title": "Apple iPhone 17 Pro 256GB Silver",
+      "category": "smartphones",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTw8VyknMswhkm8LTz7Q_pAB-ZXSrOg6RPUKWYNf5GibgsMK99FjrohlfGpSd7ydNKTJcK1dtA3-w8dtl0qXrucmtTFLK5YPYbugfSofTe4_ygNBzOWvbrZ0BxY",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTw8VyknMswhkm8LTz7Q_pAB-ZXSrOg6RPUKWYNf5GibgsMK99FjrohlfGpSd7ydNKTJcK1dtA3-w8dtl0qXrucmtTFLK5YPYbugfSofTe4_ygNBzOWvbrZ0BxY",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTZ2fpNhg-8Jxf9rjHI0vCZWWMo6BWnr9yPnnb48oqsAMHLEXp4AxkARgvQlo9NtOouNP7xdtxeGuV2ays7Zvrl6OuwnN4AQoY6jbQOXEFJwB4tJzGKQwOEkpk",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRI7CY23nfT-tLL1j9Z_mdoVixKZ-kZyZ8D2Uvwk0q16MMVlVNcqWF3yb6ED4WPEaoIPT02YDd4q5lDK7Z23GB5rj_YxpO4oAir8YjFND2RUO2bz8KhzUBCdg",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSLbR4JMLYPuJQQNObGdPpsrUA4KNivB2up5iNxmIwj-phmn-xDwcLp2LsZSr0svJUAqcw6z4mn9QZpeHUerbs8sjo0fw2scsA6ZOvmwFft7Sv7NEwntgvs",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSuVAphRH3YXCYgcNd3UublvYTEy3BB-W4tzuCy2zpMUuTU6L_p57kd1dHcFahE7ZSPelo7E7cbqEPDp9UZOBI9lH0wqLFlhcilmnI7JJQX03kqYkQPw7WRMoE"
+      ],
+      "video": "",
+      "price": 134900,
+      "rating": 4.8,
+      "id": "nLp9QhmTVic"
+    },
+    {
+      "title": "Apple iPhone 18",
+      "category": "smartphones",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-202609-6-3inch-black?wid=5120&hei=2880&fmt=webp&qlt=90&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCYTBPcjFUQzN2eEEzbTlaeVZmVmk4UDFzS1BRRzA4NTJUci9vckVTY21rMzhLcXQxZ1h0QThIT2dnUm5qbGk5OUJkSERIUjY1Wk1Od3FtNjF6NFZLVXZBejQ4R0RTZUtBMk1jeW56eS91Z1dCSDEwdm1hTHE2Mnp5QWhVUmRIR3Zn&traceId=1",
+      "images": [
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-202609-6-3inch-black?wid=5120&hei=2880&fmt=webp&qlt=90&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCYTBPcjFUQzN2eEEzbTlaeVZmVmk4UDFzS1BRRzA4NTJUci9vckVTY21rMzhLcXQxZ1h0QThIT2dnUm5qbGk5OUJkSERIUjY1Wk1Od3FtNjF6NFZLVXZBejQ4R0RTZUtBMk1jeW56eS91Z1dCSDEwdm1hTHE2Mnp5QWhVUmRIR3Zn&traceId=1",
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-202609-6-3inch-black_AV1?wid=5120&hei=2880&fmt=webp&qlt=90&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCYTBPcjFUQzN2eEEzbTlaeVZmVmk4UDFzS1BRRzA4NTJUci9vckVTY21rM0hWcGJKR1VxOTRYTVYvTWhsL25DOEE3b3pFWnhZZ2g0M0pRR0pEdHVSRUYrc3JrY21Ec1IvOEo0TTVyVzZsV1FiTW9KY1VOZUJBSDNsWEtoNjE0c0JB&traceId=1",
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-202609-6-3inch-black_AV2?wid=5120&hei=2880&fmt=webp&qlt=90&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCYTBPcjFUQzN2eEEzbTlaeVZmVmk4UDFzS1BRRzA4NTJUci9vckVTY21rMzFpZXI3TzRVNFlCMkNIUFdtczRsaFE3b3pFWnhZZ2g0M0pRR0pEdHVSRUhOWndGa21oeDRMUFpMS1Q1YVdyV3ZVZ29LbmZmVHFFT3J2WVBRVVhBa0VR&traceId=1"
+      ],
+      "video": "",
+      "price": 150,
+      "rating": 5,
+      "id": "AkvQQ5bJ8aQ"
+    },
+    {
+      "title": "Samsung Galaxy S26 5G",
+      "category": "smartphones",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSta-thuw8uTjRdjXRbrAovbH8LYHLMbdinknZkUHuCg4QV7i3S56sYi51RblNmPm9GDXT_KwoSKXdA45AWu6NAWcayDnTc",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSta-thuw8uTjRdjXRbrAovbH8LYHLMbdinknZkUHuCg4QV7i3S56sYi51RblNmPm9GDXT_KwoSKXdA45AWu6NAWcayDnTc",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTnSRMrlMHt8hqhjSbI6VZPpFKHb98iYQNxhwmEFzrkRGgUmDGPJlesFDaUy6ozAjI5MZwUZIKdFYwJcqggwlz8pSkujWKxa3s56sAPgLnkS5NvaC8_vEHUzrA",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTkKHslYruKr90a1n4f4xGlrs18hhUff4L_SXagHsLXUf-xj7T-Ck1mV4WQQ07JEl2nOkzdp2M6PhVm3GYdgJ3VmfMDuD9_2A6c72tVrcgTEKOud0YzRGoOXQ",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQrejcpM9DY14SWaIjENA49Nf7As_xiDMkJV6W-Hp5r2oYhsc7GQ2uG7uyxd3TGEq7KDrMVLDqPT9Sh15F9py67rL4xyzqyEhFruCFVOINr0L2IhLGdhAMTVg",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS6gI6VIREVpt0nav1G5sl91U8t8kTELCarYHG2S7PH7-W8S8J-y3zo5kMXEyHxRTSjrOhZn8XEgIOO6T4dhE0pg6a_mXy8d6FQkfDDX90fvx85Pij0I8z3",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQNneX8E4Gf5SQxMhicOGc-VfyEQgoKtH1Acey6xHHT8NPSf5DE9qqnntfRw7LFQVAVwfCSEsBpyFjQ9TRwL3s1tpZafo7Y",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTx1hm0P0pJPM9ejFQIr2oQcshCU9HDUV9RT4b6cOe_x1u9s02vLouJ4Z6rr7z5duCDgWCdIaglD193oTheLzEXJ01UEfkFaw",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTVzuI7ok_Ep9A1PoU5dNkjwcWBj3XU05f-iaWXIxBv7T8TbUDVaJvPGua5s2bw7zZiLqRrCU6Gzsnijj3GauKieWAhZWL7jA",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ-_K4WuO--SZLxDlXmDtZL9Q2jsNj3AyBN1rb15GunaFaDIlmTqd6sncz3UioI5Mj5sbO3u3o7ky075NLq2CKV0PYAWHG3t3cljVJcJAybnF596XWF7BxdBQ"
+      ],
+      "video": "",
+      "price": 59.95,
+      "rating": 4.5,
+      "id": "hO9BurTicC0"
+    },
+    {
+      "title": "Alienware 16 Aurora Gaming Laptop",
+      "category": "laptops",
+      "image": "https://dellstatic.luroconnect.com/media/catalog/product/cache/dd2a0577161cfa9edc1f09acc4e3c944/a/l/alienware-ac16250-laptop-c-15000ff105-bl.png",
+      "images": [
+        "https://dellstatic.luroconnect.com/media/catalog/product/cache/dd2a0577161cfa9edc1f09acc4e3c944/a/l/alienware-ac16250-laptop-c-15000ff105-bl.png",
+        "https://dellstatic.luroconnect.com/media/catalog/product/cache/dd2a0577161cfa9edc1f09acc4e3c944/l/a/laptop-alienware-ac16250-gallery-3_3.jpg",
+        "https://dellstatic.luroconnect.com/media/catalog/product/cache/dd2a0577161cfa9edc1f09acc4e3c944/l/a/laptop-alienware-ac16250-gallery-2_3.jpg",
+        "https://dellstatic.luroconnect.com/media/catalog/product/cache/dd2a0577161cfa9edc1f09acc4e3c944/l/a/laptop-alienware-ac16250-gallery-4_3.jpg",
+        "https://dellstatic.luroconnect.com/media/catalog/product/cache/dd2a0577161cfa9edc1f09acc4e3c944/l/a/laptop-alienware-ac16250-gallery-9_3.jpg",
+        "https://dellstatic.luroconnect.com/media/catalog/product/cache/dd2a0577161cfa9edc1f09acc4e3c944/l/a/laptop-alienware-ac16250-gallery-6_3.jpg"
+      ],
+      "video": "",
+      "price": 150,
+      "rating": 4.2,
+      "id": "c3IDDsVq-aY"
+    },
+    {
+      "title": "MacBook Air",
+      "category": "laptops",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTjUmmIsE9zNcN4kkNuedcGYVrVJI2nC1aTnggqQB1sU6FjM6AYMKvWlfKdlU5vFtUuXRxYEJuSuKPk1xH556ZXjgRPV2Y3qBT0BEHJ6WCEih5zTh2QRccApkM",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTjUmmIsE9zNcN4kkNuedcGYVrVJI2nC1aTnggqQB1sU6FjM6AYMKvWlfKdlU5vFtUuXRxYEJuSuKPk1xH556ZXjgRPV2Y3qBT0BEHJ6WCEih5zTh2QRccApkM",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS0_gxf6sjZ-ndyxqRhzmwKHxPvN2LPTh6bSdDTZh9TbAqVC-ZW0qMbxHYgCUrbQTd85DORFPcw5Acwyuw93IMYmd8w8GSe3B2f-b_P8H1E6yesBtE9fP1HGaE",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSgYSMVkfOmh_qAQSn5LlTXN53xB-kt7XkagNzSeukyZwsHTJ9ZKCq_uQENosQLcGYVPskFNrcWLXwLHAZh4EOqM_3Sl27C5_C-aeCjf4m8hNBcHl6FsBRRXYQ",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQvcoMPtE2QBxTjonRPLxCamvcvWECrdR2qTLRsrZ8b2FD6f1bZ8inPmQEoEVNZ5BILTySlIjf7jDJLGGNBwJO2rjbWhnL_2t1_BW76_1B_MJGbVlg5e1MkEA",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR2qZoO1dvEdEcFEk6aaoV9APqAUbDTY4SE3kckxWG59bpHXkljOlco6_XwsrLMh_7-O-hl5gqdbLutzkcGJb2P1a_Kjn7LPGsKO3NnIEzZYh8m9C4rqKj3Ryw",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQAoRPdU7TZ56VeZ57JW9kv4DyzuOc9b_JXjhoQd6kC91CcY_isfxc9AsmluXuphvai_v9_DeMuj-wqhN_L53ddGEzzEmtAWLunFAJ7-AbUhexVv7Gaiw7u0Q"
+      ],
+      "video": "",
+      "price": 50,
+      "rating": 4,
+      "id": "tgYjgWZto8g"
+    },
+    {
+      "title": "Apple iPad Air M4 Wi-Fi",
+      "category": "tablets",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcROhKDf7Wz_uxtX3TaHykgUtWtoFs36LtAAG8-7AihzSnOqyO5OgzPRPNrsAZVwc3-sE9aUnHo62QzGWBzaqB-3ujpuM-Oi7WSrRBat0vDmS2YEnO-9osCUlg",
+      "images": [
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcROhKDf7Wz_uxtX3TaHykgUtWtoFs36LtAAG8-7AihzSnOqyO5OgzPRPNrsAZVwc3-sE9aUnHo62QzGWBzaqB-3ujpuM-Oi7WSrRBat0vDmS2YEnO-9osCUlg",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRP9J9JZ9xBUe1GqMmaiwlW_48JQ_FNOGqF06b96NKXZKRmqxNv1A9whvQxjrN82FItuoJ93DFqRrjUlAYRYyX8Xc-JN6xKlXv3oaHC_LNjpNt8VnP4uNjnTcg",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSbbhTKpbWDls9jpRiSYVZDJeLeAzHYhpii0YxYZWQv6NcGO0m069ID_oZecncnsH2rU4YQfRzH0qdNfAQ0KPmGjUv2SiEpw3cEv-u6GDUOTuRsl-wTrFlIzn8",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTEM5aGtKsJ1r0e7m8mnXuZKgm2u58l4xmvBPPrMVUO8OyX-AMSb78T3-RLV0id77hn-B6HW897MCpgGAHIyORPZdJsCZZdDSyIf6ikGR49x6k3TSPSvbkd",
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRO5VE8ivqUqdqJHOA6InOj0zUMthmPAg0VPNB6a-Ho4s-i96aO0B0qt5eAlEu6gTrM8oQ0RC0cucWjUfw5JhPJrKKF7NqMalXTY7aLuWqtmZFuzaDftSPeCg",
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRHoEJgfrqAPLFUWBhFGq4Qj1bo6iKMHZL5trPrAy1o3ow2BLwWH9xCZQYst95rAqoiXyIgmTrQSH2XCXeLcfp2zYF8Pf3V",
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQgQ7lKx-VOcpgaZ8IaL1D3gWr1UVLXRDYh-5_UlSc5BfFTNmdb_6dbANbBzzSwpe81tJS7-d4-LJaOUAfyTYNex-9VtHMZLh8TOHS9TdVrDpnNsv2DSh8q8w"
+      ],
+      "video": "",
+      "price": 20,
+      "rating": 4,
+      "id": "vVEbezohf4E"
     }
-  ]
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Smartphones"
+    },
+    {
+      "id": "2",
+      "name": "Laptops"
+    },
+    {
+      "id": "3",
+      "name": "Tablets"
+    },
+    {
+      "id": "4",
+      "name": "Mobile Accessories"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "y1Vk9i4S_S8"
+    },
+    {
+      "productId": "3",
+      "name": "atiya nishtat",
+      "rating": "",
+      "comment": "",
+      "id": "rc4Tlbw1ANM"
+    },
+    {
+      "productId": "3",
+      "name": "ATIYA NISHAT",
+      "rating": "4",
+      "comment": "nice",
+      "id": "J_fKnHPtp6o"
+    },
+    {
+      "productId": "2",
+      "name": "atiya",
+      "rating": "5",
+      "comment": "Great battery life",
+      "id": "xP6rGEdx-bA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
